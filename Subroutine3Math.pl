@@ -14,24 +14,31 @@ my $subNum1;
 my $subNum2;
 my $subNum3;
 my $tot;
-my $num;
+
 
 
 sub enterNums{
 	
-	$num = <STDIN>;
-	chomp $num;
-
+	my $num1 = <STDIN>;
+	chomp $num1;
+	my $num2 = <STDIN>;
+	chomp $num2;
+	my $num3 = <STDIN>;
+	chomp $num3;
+	
+	
 }
 
 sub multi {
 	$tot = $subNum1 * $subNum2 * $subNum3;
+	return $tot;
 }
 
 print "\n";
 print "Please Enter Numbers: "; 
 
 enterNums($subNum1, $subNum2, $subNum3);
+
 
 
 multi($subNum1, $subNum2, $subNum3);
